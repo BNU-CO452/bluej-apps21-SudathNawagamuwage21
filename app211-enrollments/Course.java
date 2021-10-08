@@ -4,8 +4,9 @@ import java.util.*;
  * This class contains information about an undergraduate course
  * at BNU together with a list of student who are enrolled
  *
- * @author Derek Peacock
- * @version 1.0 14/07/2021
+ * @author Derek Peacocko
+ * @modified by Sudath Nawagamuwage
+ * @version 1.0 08/10/2021
  */
 public class Course
 {
