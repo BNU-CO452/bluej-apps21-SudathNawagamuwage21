@@ -1,33 +1,63 @@
 
 /**
- * Write a description of class Module here.
+ * This Module calss contains a BNU module which from part of a course
  *
  * @author Sudath Nawagamuwage
  * @version 08/10/2021
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // variables for Module class
+    private String code;
+    private String title;
+    private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module()
+    public Module(String code, String title)
     {
         // initialise instance variables
-        x = 0;
+        this.code = code;
+        this.title = title;
+        this.credit = 0;
+        
     }
-
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Return the course code of the moudle.
      */
-    public int sampleMethod(int y)
+    public String getCode()
     {
-        // put your code here
-        return x + y;
+        return this.code;
+    }
+    /**
+     * Return the title name of the moudle.
+     */
+    public String gettitle()
+    {
+        return this.title;
+    }
+    /**
+     * Return the crdite value of this moudle.
+     */
+    public int getCredit()
+    {
+        return this.credit;
+    }
+    /**
+     * Set the the crdite value of this moudle.
+     */
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+    }
+    /**
+     * Print the details of the modules, the module
+     * code and title
+     */
+    public void print()
+    {
+        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println();
     }
 }
