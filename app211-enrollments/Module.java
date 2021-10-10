@@ -11,6 +11,7 @@ public class Module
     private String code;
     private String title;
     private int credit;
+    private int mark;
 
     /**
      * Constructor for objects of class Module
@@ -21,6 +22,7 @@ public class Module
         this.code = code;
         this.title = title;
         this.credit = 0;
+        this.mark = 0;
         
     }
     /**
@@ -52,12 +54,26 @@ public class Module
         this.credit = credit;
     }
     /**
+     * Return mark for the moudle.
+     */
+    public int getMark()
+    {
+        return this.mark;
+    }
+    /**
+     * Set the the marks for the this moudle.
+     */
+    public void setMark(int mark)
+    {
+        this.mark = mark;
+    }
+    /**
      * Print the details of the modules, the module
      * code and title
      */
     public void print()
     {
-        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println(" Module Code: " + code + ": " + title + " Mark:" + mark);
         System.out.println();
     }
 }
