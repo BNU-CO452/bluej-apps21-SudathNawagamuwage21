@@ -43,12 +43,7 @@ public class Course
         
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
-    }
-    /**
-     * This will prints the details of the course and the module
-     */
-    public void printModule()
-    {
+        //This will prints the details of the course and the module
         module.print();
     }
     /**

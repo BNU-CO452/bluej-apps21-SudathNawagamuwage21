@@ -21,7 +21,7 @@ public class Module
         // initialise instance variables
         this.code = code;
         this.title = title;
-        this.credit = 0;
+        this.credit = 15;
         this.mark = 0;
         
     }
@@ -35,7 +35,7 @@ public class Module
     /**
      * Return the title name of the moudle.
      */
-    public String gettitle()
+    public String getTitle()
     {
         return this.title;
     }
@@ -73,7 +73,8 @@ public class Module
      */
     public void print()
     {
-        System.out.println(" Module Code: " + code + ": " + title + " Mark:" + mark);
+        System.out.println(" Module Code: " + code + ": " 
+                                + title + " Credit:" + credit);
         System.out.println();
     }
 }
