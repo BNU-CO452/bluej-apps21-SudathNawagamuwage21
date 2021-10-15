@@ -22,9 +22,9 @@ public class Module
         this.code = code;
         this.title = title;
         this.credit = 15;
-        this.mark = 0;
-        
+        //this.mark = 0;
     }
+    
     /**
      * Return the course code of the moudle.
      */
@@ -32,6 +32,7 @@ public class Module
     {
         return this.code;
     }
+    
     /**
      * Return the title name of the moudle.
      */
@@ -39,6 +40,7 @@ public class Module
     {
         return this.title;
     }
+    
     /**
      * Return the crdite value of this moudle.
      */
@@ -46,6 +48,7 @@ public class Module
     {
         return this.credit;
     }
+    
     /**
      * Set the the crdite value of this moudle.
      */
@@ -53,6 +56,7 @@ public class Module
     {
         this.credit = credit;
     }
+    
     /**
      * Return mark for the moudle.
      */
@@ -60,6 +64,7 @@ public class Module
     {
         return this.mark;
     }
+    
     /**
      * Set the the marks for the this moudle.
      */
@@ -67,6 +72,7 @@ public class Module
     {
         this.mark = mark;
     }
+    
     /**
      * Print the details of the modules, the module
      * code and title

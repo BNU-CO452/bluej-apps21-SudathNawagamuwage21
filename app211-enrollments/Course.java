@@ -26,6 +26,7 @@ public class Course
         this.code = code;
         this.title = title;
     }
+    
     /**
      * This will add a module to a course
      */
@@ -33,6 +34,7 @@ public class Course
     {
         this.module = module;
     }
+    
     /**
      * Print the details of the course, the list
      * of students enrolled and the module
@@ -46,6 +48,7 @@ public class Course
         //This will prints the details of the course and the module
         module.print();
     }
+    
     /**
      * Print out the details of the course to the terminal.
      */
