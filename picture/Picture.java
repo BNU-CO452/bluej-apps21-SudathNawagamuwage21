@@ -1,3 +1,5 @@
+package picture;
+
 
 /**
  * This class represents a simple picture. You can draw the picture using

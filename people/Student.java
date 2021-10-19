@@ -1,3 +1,5 @@
+package people;
+
 /**
  * A class representing students for a simple BlueJ demo program.
  *
