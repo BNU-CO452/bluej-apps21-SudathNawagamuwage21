@@ -4,7 +4,8 @@
  * pass the module with a mark of 40+
  *
  * @author Derek Peacock and Nicholas Day
- * @version 1.0 17/07/2021
+ * @modified by Sudath Nawagamuwage
+ * @version 2021-10-23
  */
 public class Module
 {
@@ -23,13 +24,11 @@ public class Module
         this.code = code;
         this.title = title;
     }
-
    
     public String getCode()
     {
         return code;
-    }
-    
+    }    
     
     public String getTitle()
     {

@@ -3,8 +3,9 @@ import java.util.ArrayList;
  * This class stores information about a course
  * that enrolled students may want to complete
  *
- * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @author modifie Peacock and Nicholas Day
+ * @modified by Sudath Nawagamuwage
+ * @version 2021-10-23
  */
 public class Course
 {

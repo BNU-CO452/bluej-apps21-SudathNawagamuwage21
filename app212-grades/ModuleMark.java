@@ -1,10 +1,12 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * The ModuleMark class contain student module marks 
+ * and student is awarded the module's credit
  *
  * @author Derek Peacock and Nicholas Day
- * @version 2021-08-18
- */
+ * @modified by Sudath Nawagamuwage
+ * @version 2021-10-23
+*/
 public class ModuleMark
 {
     private int mark;

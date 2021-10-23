@@ -4,7 +4,7 @@ import java.util.*;
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * Modified by Sudath Nawagamuwage
+ * @modified by Sudath Nawagamuwage
  * @version 2021-10-23
  */
 public class Student
@@ -85,8 +85,7 @@ public class Student
     {
         return id;
     }
-
-        
+      
     /**
      * Print the student's name and ID number to the 
      * output terminal.
