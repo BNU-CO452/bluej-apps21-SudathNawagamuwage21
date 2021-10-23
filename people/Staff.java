@@ -1,4 +1,4 @@
-package people;
+ 
 
 /**
  * A class representing staff members for a simple BlueJ demo program.

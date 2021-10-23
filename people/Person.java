@@ -1,4 +1,4 @@
-package people;
+ 
 
 /**
  * A person class for a simple BlueJ demo program. Person is used as
