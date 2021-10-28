@@ -68,6 +68,25 @@ public class Student
     public void awardTestMarks()
     {
         
+        int value =75;
+        for(Module module : course.modules)
+        {
+           ModuleMark mark = new ModuleMark(module);
+           mark.setMark(value);
+            
+            value = value -10;
+            
+            marks.add(mark);
+        }
+        //int value = 75;
+        //for(Module module : course.modules);
+        //{
+        //    ModuleMark mark = new ModuleMark(module);
+        //    mark.setMark(value);
+        //    value = value -10;
+        //    marks.add(mark);
+        //}
+    
     }
     
     /**
@@ -101,11 +120,20 @@ public class Student
         course.print();
     }
     
+    /**
+     * Print the student module mark for 
+     * thaire modules.
+     */
     private void printModules()
     {
-       course.printModules();
-        //for(ModuleMark moduleMark : marks)
+       //course.printModules();
+       //for(ModuleMark moduleMark : marks)
        //moduleMark.print();
+       for(ModuleMark mark : marks) 
+       {
+           mark.print();
+           System.out.println("\t" + course.convertToGrade(mark.getValue()));
+       }
     }
     
     public void printTranscript()
