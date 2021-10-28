@@ -20,7 +20,7 @@ public class Course
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("BT1CWD1", "BSc Computing & Web");
     }
     
     /**
@@ -90,6 +90,10 @@ public class Course
      */
     public void printModules()
     {
-        System.out.println();
+        for(Module module : modules)
+        {
+            module.print();
+            module.printCredit();
+        }
     }
 }
