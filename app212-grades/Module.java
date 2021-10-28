@@ -38,7 +38,7 @@ public class Module
     /**
      * Print out the code and title of this module
      * but stay on the same line so that credits
-     * can be added if needed.
+     * can be added if needed.I have remove the tabs.
      */
     public void print()
     {
