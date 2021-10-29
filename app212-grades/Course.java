@@ -69,15 +69,25 @@ public class Course
     public Grades convertToGrade(int mark)
     {
         if(mark >= 0 && mark <= 39)
+        {
             return Grades.F;
+        }
         else if(mark >= 40 && mark <=49)
+        {
             return Grades.D;
+        }
         else if (mark >= 50 && mark <=59)
+        {
             return Grades.C;
+        }
         else if(mark >= 60 && mark <= 69)
+        {
             return Grades.B;
+        }
         else if(mark >= 70 && mark <= 100)
+        {
             return Grades.A;
+        }
         else
             return Grades.NS;
     }
