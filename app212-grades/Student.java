@@ -74,9 +74,9 @@ public class Student
            ModuleMark mark = new ModuleMark(module);
            mark.setMark(value);
             
-            value = value -10;
+           value = value -10;
             
-            marks.add(mark);
+           marks.add(mark);
         }
         //int value = 75;
         //for(Module module : course.modules);
