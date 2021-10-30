@@ -9,15 +9,15 @@ import java.util.*;
  */
 public class Student
 {
-    // the student ID
+    // The student ID
     private int id;
-    // the student's full name
+    // The student's full name
     private String name;
     // The course the student is enrolled on
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
-    
+        
     /**
      * This constructor creates a new student with a
      * fixed name and id. 
@@ -34,7 +34,7 @@ public class Student
     {
         this.name = name;
         this.id = id;
-        
+        //mark array list
         marks = new ArrayList<ModuleMark>();
     }
 
@@ -67,26 +67,31 @@ public class Student
      */
     public void awardTestMarks()
     {
+        int value = 75;
         
-        int value =75;
         for(Module module : course.modules)
         {
            ModuleMark mark = new ModuleMark(module);
            mark.setMark(value);
+           
+           value = value +10;
             
-           value = value -10;
-            
-           marks.add(mark);
-        }
-        //int value = 75;
-        //for(Module module : course.modules);
-        //{
-        //    ModuleMark mark = new ModuleMark(module);
-        //    mark.setMark(value);
-        //    value = value -10;
-        //    marks.add(mark);
-        //}
+           addMark(mark);
+        }    
+    }
+    /**
+     * Print the student's name and ID number to the 
+     * output terminal.
+     */
+    public void print()
+    {
+        System.out.println(" Student ID: " + id + ", " + name);
+    }
     
+    public void printCourse()
+    {
+        this.print();
+        course.print();
     }
     
     /**
@@ -104,31 +109,13 @@ public class Student
     {
         return id;
     }
-      
-    /**
-     * Print the student's name and ID number to the 
-     * output terminal.
-     */
-    public void print()
-    {
-        System.out.println(" Student ID: " + id + ", " + name);
-    }
     
-    public void printCourse()
-    {
-        this.print();
-        course.print();
-    }
-    
-    /**
+        /**
      * Print the student module mark for 
      * thaire modules.
      */
     private void printModules()
     {
-       //course.printModules();
-       //for(ModuleMark moduleMark : marks)
-       //moduleMark.print();
        for(ModuleMark mark : marks) 
        {
            mark.print();
