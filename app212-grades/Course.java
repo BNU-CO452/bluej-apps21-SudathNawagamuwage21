@@ -45,12 +45,15 @@ public class Course
     public void createModules()
     {
         Module co452 = new Module ("CO452", "Programming Concepts");
+        addModule(co452);  
+        
         Module co450 = new Module ("CO450", "Computer Architectures");
-        Module co456 = new Module ("CO456", "Web Development");
-        Module co455 = new Module ("CO455", "DTPP");
-        addModule(co452);
         addModule(co450);
+        
+        Module co456 = new Module ("CO456", "Web Development Prog");
         addModule(co456);
+        
+        Module co455 = new Module ("CO455", "Digital Technologies");
         addModule(co455);
     
     }   
@@ -63,8 +66,8 @@ public class Course
         }
     }
     
-    /**
-     * 
+    /**The student mark calculated and return
+     * grade value
      */
     public Grades convertToGrade(int mark)
     {
@@ -99,15 +102,16 @@ public class Course
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
         int total = 0;
-        int finalMark = 0;
+        int averageMark = 0;
         
         for (ModuleMark mark : marks)
         {
             total = total + mark . getValue();
         }
         
-        finalMark = total / MAXN_MODULES;
-        finalGrade = convertToGrade(finalMark);
+        averageMark = total / MAXN_MODULES;
+        
+        finalGrade = convertToGrade(averageMark);
         
         return finalGrade;
         
@@ -132,8 +136,14 @@ public class Course
      */
     public void printModules()
     {
+        System.out.println("        Course Modules");
+        System.out.println("        --------------");
+        //System.out.println();
+        
         for(Module module : modules)
         {
+            //System.out.println(module.getCode());
+            //System.out.println(module.getTitle());
             module.print();
             module.printCredit();
         }
