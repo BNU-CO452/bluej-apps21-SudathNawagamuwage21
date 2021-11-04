@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.ArrayList;
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
@@ -17,7 +18,8 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
-        
+    //private ArrayList<Student> students;
+            
     /**
      * This constructor creates a new student with a
      * fixed name and id. 
@@ -25,6 +27,7 @@ public class Student
     public Student()
     {
         this("Sudath Nawagamuwage", 21428786);
+         
     }
     
     /**
@@ -59,6 +62,7 @@ public class Student
     {
         this.course = course;
         awardTestMarks();
+        
     }
     
     /**
@@ -127,7 +131,7 @@ public class Student
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Sudath Nawagamuwage");
         System.out.println(" ------------------------------------");
         
         printCourse();
