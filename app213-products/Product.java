@@ -53,7 +53,7 @@ public class Product
 
     public void setQuantity(int quantity)
     {
-        this.quantity = quantity;
+        this.   quantity = quantity;
     }
     
     public void increaseQuantity(int amount)

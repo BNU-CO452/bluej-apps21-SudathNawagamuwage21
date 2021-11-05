@@ -50,21 +50,21 @@ public class Course
      */
     public void createModules()
     {
-        Module co452 = new Module ("CO452", "Programming Concepts");
+        Module co452 = new Module ("CO452", "Programming Concepts  ");
         addModule(co452);  
         
-        Module co450 = new Module ("CO450", "Computer Architectures");
+        Module co450 = new Module ("CO450", "Computer Architectures ");
         addModule(co450);
         
-        Module co456 = new Module ("CO456", "Web Development Prog");
+        Module co456 = new Module ("CO456", "Web Development Prog  ");
         addModule(co456);
         
-        Module co455 = new Module ("CO455", "Digital Technologies");
+        Module co455 = new Module ("CO455", "Digital Technologies  ");
         addModule(co455);
     
     }   
     
-    public void createStudents(Student student)
+    public void addStudents(Student student)
     {
         students.add(student);
     }
