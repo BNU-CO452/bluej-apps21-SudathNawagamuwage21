@@ -26,7 +26,11 @@ public class Student
      */
     public Student()
     {
+        //Student sudath = new Student ("Sudath Nawagamuwage", 21428786);
+        //Student saveyth = new Student ("saveyth Nawagamuwage", 21428789);
+        //addStudents(sudath);
         this("Sudath Nawagamuwage", 21428786);
+        //this("Derek Peacock", 21428659);
          
     }
     
@@ -61,6 +65,7 @@ public class Student
     public void enrol(Course course)
     {
         this.course = course;
+        this.course. addStudents(this);
         awardTestMarks();
         
     }
