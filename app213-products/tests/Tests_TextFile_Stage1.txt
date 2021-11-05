@@ -1,0 +1,24 @@
+Product huaweiP = new Product(104, "Huawei P Smart ");
+huaweiP.print();
+ ID 104: Huawei P Smart  stock level: 0
+huaweiP.decreaseQuantity(2);
+huaweiP.print();
+ ID 104: Huawei P Smart  stock level: 0
+huaweiP.increaseQuantity(10);
+huaweiP.print();
+ ID 104: Huawei P Smart  stock level: 10
+huaweiP.decreaseQuantity(5);
+huaweiP.print();
+ ID 104: Huawei P Smart  stock level: 5
+Product samsungA32 = new Product(105, "Samsung Galaxy A32 5G");
+StockList stock = new StockList();
+stock.add(huaweiP);
+stock.add(samsungA32);
+stock.print();
+
+ Sudath's Stock List
+ ====================
+
+ ID 104: Huawei P Smart  stock level: 5
+ ID 105: Samsung Galaxy A32 5G stock level: 0
+
