@@ -1,0 +1,24 @@
+ Product toshibaLaptop = new Product(103, "Toshiba Satalite L50");
+toshibaLaptop.print();
+ ID 103: Toshiba Satalite L50 stock level: 0
+toshibaLaptop.decreaseQuantity(1);
+toshibaLaptop.print();
+ ID 103: Toshiba Satalite L50 stock level: 0
+toshibaLaptop.increaseQuantity(10);
+toshibaLaptop.print();
+ ID 103: Toshiba Satalite L50 stock level: 10
+toshibaLaptop.decreaseQuantity(5);
+toshibaLaptop.print();
+ ID 103: Toshiba Satalite L50 stock level: 5
+Product appleMacBook = new Product(105, "Apple MacBook Air");
+StockList sudathComputerStockList = new StockList();
+sudathComputerStockList.add(toshibaLaptop);
+sudathComputerStockList.add(appleMacBook);
+sudathComputerStockList.print();
+
+ Sudath's  Computer Shop Stock List 
+ ================================== 
+
+ ID 103: Toshiba Satalite L50 stock level: 5
+ ID 105: Apple MacBook Air stock level: 0
+
