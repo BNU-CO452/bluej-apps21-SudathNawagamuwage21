@@ -1,4 +1,4 @@
-import java.util.Random;
+//import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -13,7 +13,7 @@ public class StockDemo
     // The stock manager.
     private StockList stock;
     
-    private Random generator = new Random();
+    //private Random generator = new Random();
 
     /**
      * Create a StockManager and populate it with at least
@@ -29,14 +29,7 @@ public class StockDemo
         stock.add(new Product(101, "Samsung Galaxy S20"));
         stock.add(new Product(102, "Apple iPhone 12"));
         stock.add(new Product(103, "Google Pixel 4A"));
-        stock.add(new Product(104, "Samsung Galaxy S20"));
-        stock.add(new Product(105, "Apple iPhone 12"));
-        stock.add(new Product(106, "Google Pixel 4A"));
-        stock.add(new Product(107, "Samsung Galaxy S20"));
-        stock.add(new Product(108, "Apple iPhone 12"));
-        stock.add(new Product(109, "Google Pixel 4A"));
-        stock.add(new Product(110, "Apple iPhone 12"));
-        
+                
     }
     
     /**
@@ -61,48 +54,48 @@ public class StockDemo
     
     private void buyProducts()
     {
-        Product product;
-        int quantity = 1;
+        // Product product;
+        // int quantity = 1;
         
-        for(int id = 100; id <= 110; id++)
-        {
-           product = stock.findProduct(id);
+        // for(int id = 100; id <= 110; id++)
+        // {
+           // product = stock.findProduct(id);
            
-           if(product == null)
-           {
-             System.out.println("product" +id+ "Not Fount");
-           }
-           else
-           {
-               quantity = generator.nextInt(20);
-               stock.buyProduct(id, quantity);
+           // if(product == null)
+           // {
+             // System.out.println("product" +id+ "Not Fount");
+           // }
+           // else
+           // {
+               // quantity = generator.nextInt(20);
+               // stock.buyProduct(id, quantity);
                
-           }
+           // }
         
-        }
+        // }
         
     }
 
     private void sellProducts()
     {
-        Product product;
-        int quantity = 1;
+        // Product product;
+        // int quantity = 1;
         
-        for(int id = 100; id <= 110; id++)
-        {
-            product = stock.findProduct(id);
+        // for(int id = 100; id <= 110; id++)
+        // {
+            // product = stock.findProduct(id);
             
-            if(product == null)
-            {
-                System.out.println("Product " + id + " Not found");
-            }
-            else
-            {
-               quantity = generator.nextInt(20);
-               stock.sellProduct(id, quantity);
-            }
-        }
+            // if(product == null)
+            // {
+                // System.out.println("Product " + id + " Not found");
+            // }
+            // else
+            // {
+               // quantity = generator.nextInt(20);
+               // stock.sellProduct(id, quantity);
+            // }
+        // }
         
-    }    
+     }    
 }
    
