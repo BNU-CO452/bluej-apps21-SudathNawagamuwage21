@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-//import java.util.Random;
 
 /**
  * Manage the stock in a business.
@@ -12,9 +11,7 @@ public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
-    
-    //private Random generator = new Random();
-    
+        
     /**
      * Initialise the stock manager.
      */
@@ -116,7 +113,8 @@ public class StockList
     }  
      
     /**
-     * 
+     * This metthod will find the product 
+     * and remove the product.
     */
     public void remove(int productID)
     {
@@ -132,7 +130,8 @@ public class StockList
         }
     }
     /**
-     * 
+     * This metthod will search the product 
+     * by name
      */    
     public void searchProduct(String phrase)
     {
