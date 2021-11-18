@@ -14,7 +14,7 @@ public class StockList
     private ArrayList<Product> stock;
     
     //private Random generator = new Random();
-
+    
     /**
      * Initialise the stock manager.
      */
@@ -39,8 +39,7 @@ public class StockList
     {
         buyProduct(productID, 1);
     }
-    
-    
+        
     /**
      * Buy a quantity of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -49,17 +48,20 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
-        // Product product = findProduct(productID);
+               
+        Product product = findProduct(productID);
         
-        // if(product == null)
-        // {
-        // }
-        // else
-        // {
-            // product.increaseQuantity(amount);
-            // System.out.println("NOT FOUND");
-            
-        // }
+        if(product == null) 
+        {
+           // printout message
+           System.out.println(product + " Not Found ");
+        }
+        else
+        {
+                // printout message
+                product.increaseQuantity(amount);
+                System.out.println(" Bought " + amount + " of " + product.getName());
+        }
     }
     
     /**
@@ -68,85 +70,74 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
-        // for(Product product : stock)
-        // {
-            // if(product.getID() == productID)
-                // return product;
-        // }
-        
+        for(Product product : stock)        
+        {
+            if(product.getID() == productID)
+            {
+                return product;
+            }
+        }
         return null;
     }
-    
     
     /**
      * Sell one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-        public void sellProduct(int productID)
+    public void sellProduct(int productID, int sellQuantity)
     {
-        Product product = findProduct(productID);
         
+        Product product = findProduct(productID);
+
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() >= sellQuantity)
             {
-                product.decreaseQuantity(1);
-                
+                product.decreaseQuantity(sellQuantity);
                 // printout message
+                System.out.println("Sold " + sellQuantity + " of " + product.getName());
+            }
+            else if(product.getQuantity() <= sellQuantity)
+            {
+                System.out.println(product.getName() + " You can't buy " + sellQuantity + " only have " + product.getQuantity());
             }
             else
             {
                 // printout message
+                System.out.println(product.getName() + " is out of stock");
             }
         }
         else
         {
             // printout message
+            System.out.println("It is not sold at this location");
         }
-    }        
-    //public void sellProduct(int productID, int sellQuantity)
-    // {
-        // System.out.println("Selling Quanitities of Stock\n");
+    }  
+     
+    /**
+     * 
+    */
+    public void remove(int productID)
+    {
+        Product product = findProduct(productID);
+        if(product != null) 
+        {
+            System.out.println(product + " Product is removed ");
+            stock.remove(product);
+        }
+        else
+        {
+            System.out.println("Invalid Product ID ");
+        }
+    }
+    /**
+     * 
+     */    
+    public void searchProduct(String phrase)
+    {
         
-        // Product product = findProduct(productID);
-        // int stockQuantity = product.getQuantity();
-        
-        // if(product != null) 
-        // {
-            // if(stockQuantity > 0)
-            // {
-                // if(stockQuantity > sellQuantity)
-                // {
-                    // product.decreaseQuantity(sellQuantity);
-                    // System.out.println("Selling " + sellQuantity + " " + product.getID());
-                    
-                // }
-                // else
-                // {
-                    // System.out.println("All stock is sold!!");
-                    // System.out.println("Selling " + stockQuantity + " " + product.getID());
-                    // product.decreaseQuantity(stockQuantity);
-                // }
-                
-            // }
-            // else
-            // {
-                // System.out.println("Selling none of " + product.getID());
-            // }
-        // }
-        // else
-        // {
-            // // printout message
-        // }
-    // }    
-
-    // public void search(String phrase)
-    // {
-        // if(phrase.contains("Samsung"))
-        // {
-        // }
-    // }
+    }
     
     /**
      * Locate a product with the given ID, and return how
@@ -157,7 +148,7 @@ public class StockList
      */
     public int numberInStock(int productID)
     {
-        return 0;
+       return 0;
     }
 
     /**

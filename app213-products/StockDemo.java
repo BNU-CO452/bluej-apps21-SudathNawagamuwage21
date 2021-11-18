@@ -1,4 +1,4 @@
-//import java.util.Random;
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -13,7 +13,7 @@ public class StockDemo
     // The stock manager.
     private StockList stock;
     
-    //private Random generator = new Random();
+    private Random generator = new Random();
 
     /**
      * Create a StockManager and populate it with at least
@@ -26,16 +26,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Toshiba Satalite L50"));
-        stock.add(new Product(102, "Apple MacBook Air"));
-        stock.add(new Product(103, "HP 250 Pro Laptop G8"));
-        stock.add(new Product(104, "Asus TUF Dash F15C"));
-        stock.add(new Product(104, "Lenovo V14-ADA"));
-        stock.add(new Product(106, "Dell Inspiron 15"));
-        stock.add(new Product(107, "Medion Akoya"));
-        stock.add(new Product(108, "Huawei MateBook"));
-        stock.add(new Product(109, "Samsung Galaxy Book"));
-        stock.add(new Product(110, "Microsoft Surface Go"));
+        stock.add(new Product(101, "Toshiba Satalite L50   "));
+        stock.add(new Product(102, "Apple MacBook Air      "));
+        stock.add(new Product(103, "HP 250 Pro             "));
+        stock.add(new Product(104, "Asus TUF Dash F15C     "));
+        stock.add(new Product(105, "Lenovo V14-ADA         "));
+        stock.add(new Product(106, "Dell Inspiron 15       "));
+        stock.add(new Product(107, "Medion Akoya           "));
+        stock.add(new Product(108, "Huawei MateBook        "));
+        stock.add(new Product(109, "Samsung Galaxy Book    "));
+        stock.add(new Product(110, "Microsoft Surface Go   "));
     }
     
     /**
@@ -58,50 +58,53 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * This method will buy different quantities of
+     * each of the products in the stock list
+     */
     private void buyProducts()
     {
-        // Product product;
-        // int quantity = 1;
+        Product product;
+        int quantity = 1;
         
-        // for(int id = 100; id <= 110; id++)
-        // {
-           // product = stock.findProduct(id);
-           
-           // if(product == null)
-           // {
-             // System.out.println("product" +id+ "Not Fount");
-           // }
-           // else
-           // {
-               // quantity = generator.nextInt(20);
-               // stock.buyProduct(id, quantity);
-               
-           // }
-        
-        // }
+        for(int id = 100; id <= 110; id++)
+        {
+           product = stock.findProduct(id);
+           if(product == null)
+           {
+             System.out.println(" Product " + id + " " + "Not Found");
+           }
+           else
+           {
+               quantity = generator.nextInt(20);
+               stock.buyProduct(id, quantity);
+           }
+        }
         
     }
-
+    
+    /**
+     * This method will sell different quantities of
+     * each of the products in the stock list
+     */
     private void sellProducts()
     {
-        // Product product;
-        // int quantity = 1;
+        Product product;
+        int quantity = 1;
         
-        // for(int id = 100; id <= 110; id++)
-        // {
-            // product = stock.findProduct(id);
-            
-            // if(product == null)
-            // {
-                // System.out.println("Product " + id + " Not found");
-            // }
-            // else
-            // {
-               // quantity = generator.nextInt(20);
-               // stock.sellProduct(id, quantity);
-            // }
-        // }
-        
-     }    
+        for(int id = 101; id <= 110; id++)
+        {
+            product = stock.findProduct(id);
+            if(product == null)
+            {
+                System.out.println(" Product " + id + " " + " Not Found");
+            }
+            else
+            {
+               quantity = generator.nextInt(20);
+               stock.sellProduct(id, quantity);
+            }
+        }
+    }    
 }
    
