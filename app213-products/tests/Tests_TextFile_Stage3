@@ -1,0 +1,122 @@
+ StockList SudathComputerShopstockLis = new StockList();
+StockDemo SudathStockTest = new StockDemo(SudathComputerShopstockLis);
+SudathStockTest.runDemo();
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 102: Apple MacBook Air       stock level: 0
+ ID 103: HP 250 Pro              stock level: 0
+ ID 104: Asus TUF Dash F15C      stock level: 0
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 0
+ ID 108: Huawei MateBook         stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 0
+ ID 110: Microsoft Surface Go    stock level: 0
+
+ Product 100 Not Found
+ Bought 11 of Toshiba Satalite L50   
+ Bought 6 of Apple MacBook Air      
+ Bought 12 of HP 250 Pro             
+ Bought 6 of Asus TUF Dash F15C     
+ Bought 0 of Lenovo V14-ADA         
+ Bought 0 of Dell Inspiron 15       
+ Bought 12 of Medion Akoya           
+ Bought 7 of Huawei MateBook        
+ Bought 3 of Samsung Galaxy Book    
+ Bought 17 of Microsoft Surface Go   
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 11
+ ID 102: Apple MacBook Air       stock level: 6
+ ID 103: HP 250 Pro              stock level: 12
+ ID 104: Asus TUF Dash F15C      stock level: 6
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 12
+ ID 108: Huawei MateBook         stock level: 7
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 17
+
+Sold 11 of Toshiba Satalite L50   
+Apple MacBook Air       You can't buy 14 only have 6
+Sold 4 of HP 250 Pro             
+Sold 5 of Asus TUF Dash F15C     
+Lenovo V14-ADA          You can't buy 7 only have 0
+Dell Inspiron 15        You can't buy 0 only have 0
+Medion Akoya            You can't buy 16 only have 12
+Huawei MateBook         You can't buy 11 only have 7
+Samsung Galaxy Book     You can't buy 7 only have 3
+Sold 7 of Microsoft Surface Go   
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 102: Apple MacBook Air       stock level: 6
+ ID 103: HP 250 Pro              stock level: 8
+ ID 104: Asus TUF Dash F15C      stock level: 1
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 12
+ ID 108: Huawei MateBook         stock level: 7
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 10
+
+SudathComputerShopstockLis.print();
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 102: Apple MacBook Air       stock level: 6
+ ID 103: HP 250 Pro              stock level: 8
+ ID 104: Asus TUF Dash F15C      stock level: 1
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 12
+ ID 108: Huawei MateBook         stock level: 7
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 10
+
+SudathComputerShopstockLis.lowStockLevel();
+
+ Sudath's Computer Shop Low Stock Items 
+ ======================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 104: Asus TUF Dash F15C      stock level: 1
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 3
+SudathComputerShopstockLis.printSearchStock();
+
+ Sudath's Computer Shop Search Items Found 
+ ========================================= 
+
+SudathComputerShopstockLis.print();
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 102: Apple MacBook Air       stock level: 6
+ ID 103: HP 250 Pro              stock level: 8
+ ID 104: Asus TUF Dash F15C      stock level: 1
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 12
+ ID 108: Huawei MateBook         stock level: 7
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 10
+
+SudathComputerShopstockLis.searchProduct("Apple MacBook Air " );
+
+ Sudath's Computer Shop Search Items Found 
+ ========================================= 
+
+ ID 102: Apple MacBook Air       stock level: 6
