@@ -4,8 +4,8 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
- * @version 0.1
+ * @modified by Sudath Nawagamuwage
+ * @version 19/11/2021
  */
 public class StockApp
 {
