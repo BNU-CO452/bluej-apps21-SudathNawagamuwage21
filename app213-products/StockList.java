@@ -38,30 +38,6 @@ public class StockList
     }
         
     /**
-     * Buy a quantity of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
-     */
-    public void buyProduct(int productID, int amount)
-    {
-               
-        Product product = findProduct(productID);
-        
-        if(product == null) 
-        {
-           // printout message
-           System.out.println(product + " Not Found ");
-        }
-        else
-        {
-                // printout message
-                product.increaseQuantity(amount);
-                System.out.println(" Bought " + amount + " of " + product.getName());
-        }
-    }
-    
-    /**
      * Find a product to match the product id,
      * if not found return null
      */
@@ -78,14 +54,40 @@ public class StockList
     }
     
     /**
+     * Buy a quantity of a particular product.
+     * Increase the quantity of the product by the given amount.
+     * @param id The ID of the product.
+     * @param amount The amount to increase the quantity by.
+     */
+    public void buyProduct(int productID, int amount)
+    {
+        //printBoughtProduct();
+        
+        Product product = findProduct(productID);
+        
+        if(product == null) 
+        {
+           // printout message
+           System.out.println(product + " Not Found ");
+        }
+        else
+        {
+                // printout message
+                product.increaseQuantity(amount);
+                System.out.println(" Bought " + amount + " of " + product.getName());
+        }
+    }
+    
+    /**
      * Sell one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
     public void sellProduct(int productID, int sellQuantity)
     {
-        
         Product product = findProduct(productID);
+        
+        //printSoldProduct();
 
         if(product != null) 
         {
@@ -129,13 +131,39 @@ public class StockList
             System.out.println("Invalid Product ID ");
         }
     }
+    
     /**
-     * This metthod will search the product 
-     * by name
+     * This method will search the product 
+     * by name print in out
      */    
     public void searchProduct(String phrase)
     {
+        printSearchStock();
         
+        for(Product product : stock)
+        {
+            if(product.getName().contains(phrase))
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    
+    /**
+     * This method will show the product has 
+     * stock level below 5
+     */    
+    public void lowStockLevel()
+    {
+        printLowStock();
+        
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 5)
+            {
+                System.out.println(product);
+            }
+        }
     }
     
     /**
@@ -184,8 +212,24 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Sudath's  Computer Shop Stock List ");
+        System.out.println(" Sudath's Computer Shop Stock List ");
         System.out.println(" ================================== ");
+        System.out.println();
+    }
+    
+        public void printSearchStock()
+    {
+        System.out.println();
+        System.out.println(" Sudath's Computer Shop Search Items Found ");
+        System.out.println(" ========================================= ");
+        System.out.println();
+    }
+    
+    public void printLowStock()
+    {
+        System.out.println();
+        System.out.println(" Sudath's Computer Shop Low Stock Items ");
+        System.out.println(" ======================================== ");
         System.out.println();
     }
 }
