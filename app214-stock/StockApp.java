@@ -43,6 +43,33 @@ public class StockApp
         }
     }
     
+    private void addProduct()
+    {
+        System.out.println("adding a new product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product id>");
+        String name = reader.getString("please enter a product name>");
+        
+        Product product = new Product(id, name);
+        stock.add(product);
+        stock.print();
+        
+        
+    }
+    
+    private void removeProduct()
+    {
+        System.out.println("Removing the product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product id>");
+        
+        //Product product = findProduct(id);
+        stock.remove(id);
+        stock.print();
+    }
+    
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -52,6 +79,14 @@ public class StockApp
         else if(choice.equals("print"))
         {
             stock.print();
+        }
+        else if(choice.equals("add"))
+        {
+            addProduct();
+        }
+        else if(choice.equals("remove"))
+        {
+            removeProduct();
         }
         
         return false;
