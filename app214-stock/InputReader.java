@@ -29,6 +29,7 @@ public class InputReader
      */
     public String getString(String prompt)
     {
+        reader = new Scanner(System.in);
         String inputLine = null;
         boolean isValid = false;
         

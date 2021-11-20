@@ -53,7 +53,9 @@ public class StockApp
         
         Product product = new Product(id, name);
         stock.add(product);
-        stock.print();
+        System.out.println("Product" + product.getID() 
+                + " : "+ product.getName() + " has been added ");
+        //stock.print();
         
         
     }
@@ -65,9 +67,13 @@ public class StockApp
         
         int id = reader.getInt("Please enter a product id>");
         
-        //Product product = findProduct(id);
+        //Product product = findProduct();
+        //Product product = removeProduct(id);
         stock.remove(id);
-        stock.print();
+        
+       // System.out.println("Product" + stock.getID() 
+               // + " : "+ product.getName() + " has been Removed ");
+        //stock.print();
     }
     
     private boolean executeChoice(String choice)
