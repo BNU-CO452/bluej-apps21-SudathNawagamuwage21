@@ -74,7 +74,7 @@ public class StockDemo
            product = stock.findProduct(id);
            if(product == null)
            {
-             System.out.println(" Product " + id + " " + "Not Found");
+             System.out.println("Product " + id + " " + "Not Found");
            }
            else
            {
@@ -99,7 +99,7 @@ public class StockDemo
             product = stock.findProduct(id);
             if(product == null)
             {
-                System.out.println(" Product " + id + " " + " Not Found");
+                System.out.println("Product " + id + " " + " Not Found");
             }
             else
             {

@@ -76,7 +76,7 @@ public class StockList
         {
                 // printout message
                 product.increaseQuantity(amount);
-                System.out.println(" Bought " + amount + " of " + product.getName());
+                System.out.println("Bought " + amount + " of " + product.getName());
         }
     }
     
@@ -167,7 +167,17 @@ public class StockList
             }
         }
     }
-    
+    public void reStock()
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 10)
+            {
+                int id = product.getID();
+                System.out.println(product);
+            }
+        }
+    }
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
