@@ -14,5 +14,6 @@ public class Main
     {
         app = new StockApp();
         app.run();
+        
     }
 }

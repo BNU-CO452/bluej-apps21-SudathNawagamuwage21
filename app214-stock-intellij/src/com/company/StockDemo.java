@@ -10,7 +10,8 @@ import java.util.Random;
  * @modified by Sudath Nawagamuwage
  * @version 2021.11.10
  */
-public class StockDemo
+public class
+StockDemo
 {
     // The stock manager.
     private StockList stock;

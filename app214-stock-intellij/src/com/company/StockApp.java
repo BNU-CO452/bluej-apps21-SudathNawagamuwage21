@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -14,9 +16,8 @@ public class StockApp
 
     private StockList stock;
 
-    //private StockDemo stockDemo;
-
-
+    //Scanner that values in putting.
+    Scanner scan = new Scanner(System.in);
 
     /**
      * Constructor for objects of class StockApp
@@ -48,10 +49,14 @@ public class StockApp
         }
     }
 
+    /**
+     * This method will add the product
+     * by name and id
+     */
     private void addProduct()
     {
-        System.out.println("adding a new product");
-        System.out.println();
+        System.out.println("Adding a new product");
+        System.out.println("---------------------");
 
         int id = reader.getInt("Please enter a product id>");
         Product search = stock.findProduct(id);
@@ -67,76 +72,134 @@ public class StockApp
         }
         else
         {
-            System.out.println("The ID already existing");
+            System.out.println("The ID already existing!!!");
         }
 
     }
-
+    /**
+     * This method will remove the product
+     * by finding the id
+     */
     private void removeProduct()
     {
-        System.out.println("Removing the product");
-        System.out.println();
+        System.out.println("Removing the old product");
+        System.out.println("--------------------------");
 
         int id = reader.getInt("Please enter a product id>");
-        Product search = stock.findProduct(id);
-        if (search == null)
+        Product product = stock.findProduct(id);
+        if (product != null)
         {
-            stock.remove(id);
+            String scan = reader.getString("Are you sure you want to remove this product(select Yes or No)>");
+            if (scan.equals("y"))
+            {
+                stock.remove(id);
+
+            }
+            else if (scan.equals("n"))
+            {
+                System.out.println("Return to main menu");
+            }
         }
         else
         {
-            System.out.println("non-existing ID");
+            System.out.println("This product ID non-existing!!!");
+        }
+   }
+
+    /**
+     * This method will buy the product
+     * amount of 10 and add to the stock list
+     */
+    private void buyStock()
+    {
+        System.out.println("Buying a new products");
+        System.out.println("-----------------------");
+
+        int id = reader.getInt("Please enter a product id>");
+        int amount = reader.getInt("Please enter the buy quantity must be between 1 and 10>");
+        if(1<= amount && amount <=10)
+        {
+            stock.buyProduct(id, amount);
+            System.out.println("Product ID "+ id + " Stock increased by " + amount);
+        }
+        else
+        {
+            System.out.println("You can't buy more that 10 product!!!");
         }
     }
 
-    private void buyStock()
-    {
-        System.out.println("buying a new products");
-        System.out.println();
-
-        int id = reader.getInt("Please enter a product id>");
-        int amount = reader.getInt("Please enter the quantity>");
-
-        stock.buyProduct(id, amount);
-
-        System.out.println("Product ID "+ id + " Stock increased by " + amount);
-    }
-
+    /**
+     * This method will sell the product
+     * amount of 10 and decreased to the stock level
+     */
     private void sellStock()
     {
-        System.out.println("buying a new products");
-        System.out.println();
+        System.out.println("Sold products");
+        System.out.println("--------------");
 
         int id = reader.getInt("Please enter a product id>");
-        int amount = reader.getInt("Please enter the quantity>");
-
-        stock.sellProduct(id, amount);
-
-        System.out.println("Product ID "+ id + " Stock decreased by " + amount);
+        int amount = reader.getInt("Please enter the Sell quantity must be between 1 and 10)>");
+        if(1<= amount && amount <=10)
+        {
+            stock.sellProduct(id, amount);
+            System.out.println("Product ID "+ id + " Stock decreased by " + amount);
+        }
+        else
+        {
+            System.out.println("You can't sell more that 10 product!!!");
+        }
     }
 
+    /**
+     * This method will search the product
+     * by name
+     */
     private void searchStock()
-
-    {
+   {
         System.out.println("search a new products");
-        System.out.println();
+        System.out.println("---------------------");
 
-        String name = reader.getString("please enter a product name>");
-
+        String name  = reader.getString("please enter a product name>");
         stock.searchProduct(name);
-    }
+   }
 
+    /**
+     * This method will search the low stock
+     * product by amount
+     */
+   private void lowStock()
+    {
+        System.out.println("Low stock products (1 to 5)");
+        System.out.println("--------------------------");
+
+        int amount  = reader.getInt("list of products whose stock levels are low (between 1 and 5)");
+        if(1 <= amount && amount <= 5) {
+            stock.lowStockLevel();
+            String scan = reader.getString("Would you like to to restock (Yes or NO)");
+            if (scan.equals("y")) {
+                stock.reStock();
+            } else if (scan.equals("n")) {
+                System.out.println("Return to main menu");
+            } else {
+                System.out.println("Wrong quantity !!!");
+            }
+        }
+    }
+    /**
+     * This method will search the re-stock
+     * product by amount
+     */
     private void reStock()
     {
-       // int amount = reader.getInt("");
-
-       // {
-          //  if ( stock.numberInStock() <=1  ) {
-                stock.reStock();
-          // }
-       // }
-
+        System.out.println("Re-stock products (1 to 5)");
+        System.out.println("--------------------------");
+        int amount  = reader.getInt("Restock product list (between 1 and 5)");
+        if(1 <= amount && amount <= 5)
+        {
+            stock.reStock();
+        }
     }
+
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -170,7 +233,7 @@ public class StockApp
         }
         else if(choice.equals("lowstock"))
         {
-            stock.lowStockLevel();
+            lowStock();
         }
         else if(choice.equals("restock"))
         {
@@ -185,15 +248,15 @@ public class StockApp
     private void printMenuChoices()
     {
         System.out.println();
-        System.out.println("    Add Product         :     Add a new product");
-        System.out.println("    Remove Product      :     Remove an old product");
-        System.out.println("    Buy Product         :     Buy new product");
-        System.out.println("    Sell Product        :     Sell Product");
-        System.out.println("    Search Products     :     Search Products");
-        System.out.println("    Low stock Products  :     Low stock Products");
-        System.out.println("    Re-stock Products   :     Re-stock Products");
-        System.out.println("    Print               :     Print all products");
-        System.out.println("    Quit                :     Quit the program");
+        System.out.println("    Add          :     Add a new product");
+        System.out.println("    Remove       :     Remove an old product");
+        System.out.println("    Buy          :     Buy new product");
+        System.out.println("    Sell         :     Sell Product");
+        System.out.println("    Search       :     Search Products");
+        System.out.println("    Low stock    :     Low stock Products");
+        System.out.println("    Re-stock     :     Re-stock Products");
+        System.out.println("    Print        :     Print all products");
+        System.out.println("    Quit         :     Quit the program");
         System.out.println();
     }
 
