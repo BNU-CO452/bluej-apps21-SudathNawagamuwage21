@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company</OriginalElement>
+  <nodes>
+    <node x="-664.5000000000002" y="414.4999999999997">com.company.InputReader</node>
+    <node x="-1545.1218235219" y="-166.50000000000006">com.company.Product</node>
+    <node x="-1031.8658536585372" y="-166.50000000000006">com.company.StockDemo</node>
+    <node x="-195.03252032520345" y="-171.0">com.company.StockList</node>
+    <node x="-1525.1218235219" y="414.4999999999997">com.company.Main</node>
+    <node x="-1244.3658536585367" y="576.0">com.company.StockApp</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.StockApp" target="com.company.StockList" relationship="TO_ONE">
+      <point x="-53.0" y="-183.0" />
+      <point x="-1191.3658536585367" y="1015.0" />
+      <point x="69.02235772357724" y="1015.0" />
+      <point x="69.02235772357724" y="1005.0" />
+      <point x="0.0" y="1005.0" />
+      <point x="0.0" y="794.0" />
+      <point x="49.13821138211384" y="794.0" />
+      <point x="49.13821138211384" y="784.0" />
+      <point x="-163.3658536585368" y="784.0" />
+      <point x="-63.33333333333334" y="205.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.StockApp" relationship="CREATE">
+      <point x="-37.25" y="-51.0" />
+      <point x="-1487.8718235219" y="942.0" />
+      <point x="-53.0" y="183.0" />
+    </edge>
+    <edge source="com.company.StockDemo" target="com.company.StockList" relationship="DEPENDENCY">
+      <point x="0.0" y="-84.0" />
+      <point x="-947.8658536585372" y="784.0" />
+      <point x="-36.69918699187011" y="784.0" />
+      <point x="63.33333333333334" y="205.0" />
+    </edge>
+    <edge source="com.company.StockApp" target="com.company.StockList" relationship="CREATE">
+      <point x="53.0" y="-183.0" />
+      <point x="-1085.3658536585367" y="1015.0" />
+      <point x="244.6341463414634" y="1015.0" />
+      <point x="244.6341463414634" y="1005.0" />
+      <point x="190.99999999999997" y="1005.0" />
+      <point x="190.99999999999997" y="784.0" />
+      <point x="-100.03252032520345" y="784.0" />
+      <point x="0.0" y="205.0" />
+    </edge>
+    <edge source="com.company.StockList" target="com.company.Product" relationship="DEPENDENCY">
+      <point x="-47.5" y="-205.0" />
+      <point x="-147.53252032520345" y="133.49999999999994" />
+      <point x="-63.0" y="150.0" />
+    </edge>
+    <edge source="com.company.StockDemo" target="com.company.StockList" relationship="TO_ONE">
+      <point x="-56.0" y="-84.0" />
+      <point x="-1003.8658536585372" y="794.0" />
+      <point x="49.13821138211384" y="794.0" />
+      <point x="49.13821138211384" y="784.0" />
+      <point x="-163.3658536585368" y="784.0" />
+      <point x="-63.33333333333334" y="205.0" />
+    </edge>
+    <edge source="com.company.StockApp" target="com.company.Product" relationship="CREATE">
+      <point x="53.0" y="-183.0" />
+      <point x="-1085.3658536585367" y="1015.0" />
+      <point x="244.6341463414634" y="1015.0" />
+      <point x="244.6341463414634" y="1005.0" />
+      <point x="380.0" y="1005.0" />
+      <point x="380.0" y="331.0" />
+      <point x="338.25" y="331.0" />
+      <point x="338.25" y="321.0" />
+      <point x="-1387.6218235219" y="321.0" />
+      <point x="63.0" y="150.0" />
+    </edge>
+    <edge source="com.company.StockList" target="com.company.Product" relationship="TO_MANY">
+      <point x="47.5" y="-205.0" />
+      <point x="-52.53252032520345" y="133.49999999999994" />
+      <point x="0.0" y="150.0" />
+    </edge>
+    <edge source="com.company.StockApp" target="com.company.InputReader" relationship="TO_ONE">
+      <point x="-53.0" y="-183.0" />
+      <point x="-1191.3658536585367" y="1015.0" />
+      <point x="69.02235772357724" y="1015.0" />
+      <point x="69.02235772357724" y="1005.0" />
+      <point x="-622.0000000000002" y="1005.0" />
+      <point x="-42.5" y="62.0" />
+    </edge>
+    <edge source="com.company.StockApp" target="com.company.StockDemo" relationship="CREATE">
+      <point x="53.0" y="-183.0" />
+      <point x="-1085.3658536585367" y="1015.0" />
+      <point x="-947.8658536585372" y="1015.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="com.company.StockApp" target="com.company.InputReader" relationship="CREATE">
+      <point x="53.0" y="-183.0" />
+      <point x="-1085.3658536585367" y="1015.0" />
+      <point x="244.6341463414634" y="1015.0" />
+      <point x="244.6341463414634" y="1005.0" />
+      <point x="-537.0000000000002" y="1005.0" />
+      <point x="42.5" y="62.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.StockApp" relationship="TO_ONE">
+      <point x="37.25" y="-51.0" />
+      <point x="-1413.3718235219" y="942.0" />
+      <point x="53.0" y="183.0" />
+    </edge>
+    <edge source="com.company.StockDemo" target="com.company.Product" relationship="CREATE">
+      <point x="56.0" y="-84.0" />
+      <point x="-891.8658536585372" y="794.0" />
+      <point x="333.0" y="794.0" />
+      <point x="333.0" y="331.0" />
+      <point x="338.25" y="331.0" />
+      <point x="338.25" y="321.0" />
+      <point x="-1387.6218235219" y="321.0" />
+      <point x="63.0" y="150.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="-232.0" y="474.5" />
+  <SelectedNodes>
+    <node>com.company.StockDemo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
