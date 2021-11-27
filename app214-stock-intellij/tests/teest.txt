@@ -1,0 +1,13 @@
+| Test No | Proposed Test | Data Entered | Expected Result | Actual Result | Comments |
+|:---:|-----|------|------|------|------|
+| 01 | Print products | "print" | 10 Products printed | 10 Product print | No error found |
+| 02 | Quit App | "quit" | Application ends | Will end the main menu running |No error found|
+| 03 | Add Product | "add", new ID and name | Product added | New Product will added "Product111 : LG GRAM LP1452-pro has been added"|No error found|
+| 04 | Add Product | "add", existing ID | Error Message | Error "The ID already existing!!!" | N0 error found|
+| 05 | Remove Product | "remove", existing ID | Product Removed | "Are you sure you want to remove this product(select Yes or No)>" if is yes will remove |the prduct" no will not remove the product "Product 111 : LG GRAM LP1452-pro : product has been removed" |No error found |
+| 06 | Remove Product | "remove", non-existing ID | Error Message |"This product ID non-existing!!!"  |No error found |
+| 07 | Buy Product | "buy", id = 100, amount = 4 | Stock increased by 4 | Buy:"Bought 10 of Toshiba Satalite L50 Product ID 101 Stock increased by 10"|No error found |
+| 08 | Sell Product | "sell", id = 100, amount = 4 | Stock decreased by 4 |  | |
+| 09 | Search Products | "search", name = "xxx" | Products that match "xxx" |  | |
+| 10 | Low stock Products | "low stock", quantity = 1 | List of low stock products |  | |
+| 11 | Re-stock Products | "re-stock", quantity = 1 | List of products re-stocked |  | |

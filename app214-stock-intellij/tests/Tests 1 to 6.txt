@@ -1,0 +1,133 @@
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > print
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 0
+ ID 102: Apple MacBook Air       stock level: 0
+ ID 103: HP 250 Pro              stock level: 0
+ ID 104: Asus TUF Dash F15C      stock level: 0
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 0
+ ID 108: Huawei MateBook         stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 0
+ ID 110: Microsoft Surface Go    stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > add
+Adding a new product
+---------------------
+Please enter a product id>
+111
+please enter a product name>LG GRAM LP1452-pro
+Product111 : LG GRAM LP1452-pro has been added 
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > add
+Adding a new product
+---------------------
+Please enter a product id>
+111
+The ID already existing!!!
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > remove
+Removing the old product
+--------------------------
+Please enter a product id>
+111
+Are you sure you want to remove this product(select Yes or No)>y
+Product 111 : LG GRAM LP1452-pro : product has been removed
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > remove
+Removing the old product
+--------------------------
+Please enter a product id>
+120
+This product ID non-existing!!!
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > 
