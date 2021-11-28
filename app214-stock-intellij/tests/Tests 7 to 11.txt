@@ -1,0 +1,365 @@
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > buy
+Buying a new products
+-----------------------
+Please enter a product id>
+101
+Please enter the buy quantity must be between 1 and 10>
+10
+Bought 10 of Toshiba Satalite L50   
+Product ID 101 Stock increased by 10
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > buy
+Buying a new products
+-----------------------
+Please enter a product id>
+102
+Please enter the buy quantity must be between 1 and 10>
+5
+Bought 5 of Apple MacBook Air      
+Product ID 102 Stock increased by 5
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > buy
+Buying a new products
+-----------------------
+Please enter a product id>
+103
+Please enter the buy quantity must be between 1 and 10>
+4
+Bought 4 of HP 250 Pro             
+Product ID 103 Stock increased by 4
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > buy
+Buying a new products
+-----------------------
+Please enter a product id>
+104
+Please enter the buy quantity must be between 1 and 10>
+10
+Bought 10 of Asus TUF Dash F15C     
+Product ID 104 Stock increased by 10
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > print
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 10
+ ID 102: Apple MacBook Air       stock level: 5
+ ID 103: HP 250 Pro              stock level: 4
+ ID 104: Asus TUF Dash F15C      stock level: 10
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 0
+ ID 108: Huawei MateBook         stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 0
+ ID 110: Microsoft Surface Go    stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > print
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 10
+ ID 102: Apple MacBook Air       stock level: 5
+ ID 103: HP 250 Pro              stock level: 4
+ ID 104: Asus TUF Dash F15C      stock level: 10
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 0
+ ID 108: Huawei MateBook         stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 0
+ ID 110: Microsoft Surface Go    stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > sell
+Sold products
+--------------
+Please enter a product id>
+104
+
+Please enter the Sell quantity must be between 1 and 10)>
+5
+Sold 5 of Asus TUF Dash F15C     
+Product ID 104 Stock decreased by 5
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > print
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 10
+ ID 102: Apple MacBook Air       stock level: 5
+ ID 103: HP 250 Pro              stock level: 4
+ ID 104: Asus TUF Dash F15C      stock level: 5
+ ID 105: Lenovo V14-ADA          stock level: 0
+ ID 106: Dell Inspiron 15        stock level: 0
+ ID 107: Medion Akoya            stock level: 0
+ ID 108: Huawei MateBook         stock level: 0
+ ID 109: Samsung Galaxy Book     stock level: 0
+ ID 110: Microsoft Surface Go    stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > search
+search a new products
+---------------------
+please enter a product name>Apple
+
+ Sudath's Computer Shop Search Items Found 
+ ========================================= 
+
+ ID 102: Apple MacBook Air       stock level: 5
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > search
+search a new products
+---------------------
+please enter a product name>Toshiba
+
+ Sudath's Computer Shop Search Items Found 
+ ========================================= 
+
+ ID 101: Toshiba Satalite L50    stock level: 10
+Sold 3 of Samsung Galaxy Book    
+Product ID 109 Stock decreased by 3
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > print
+
+ Sudath's Computer Shop Stock List 
+ ================================== 
+
+ ID 101: Toshiba Satalite L50    stock level: 16
+ ID 102: Apple MacBook Air       stock level: 6
+ ID 103: HP 250 Pro              stock level: 8
+ ID 104: Asus TUF Dash F15C      stock level: 10
+ ID 105: Lenovo V14-ADA          stock level: 6
+ ID 106: Dell Inspiron 15        stock level: 8
+ ID 107: Medion Akoya            stock level: 8
+ ID 108: Huawei MateBook         stock level: 9
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 1
+
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > lowstock
+Low stock products (1 to 5)
+--------------------------
+list of products whose stock levels are low (between 1 and 5)
+5
+
+ Sudath's Computer Shop Low Stock Items 
+ ======================================== 
+
+ ID 109: Samsung Galaxy Book     stock level: 3
+ ID 110: Microsoft Surface Go    stock level: 1
+Would you like to to restock (Yes or NO)y
+Bought 3 of Samsung Galaxy Book    
+ ID 109: Samsung Galaxy Book     stock level: 6
+Bought 1 of Microsoft Surface Go   
+ ID 110: Microsoft Surface Go    stock level: 2
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > restock
+Re-stock products (1 to 5)
+--------------------------
+Restock product list (between 1 and 5)
+1
+Bought 2 of Microsoft Surface Go   
+ ID 110: Microsoft Surface Go    stock level: 4
+********************************
+  App21-04: Stock Application 
+      by Sudath Nawagamuwage
+********************************
+
+    Add          :     Add a new product
+    Remove       :     Remove an old product
+    Buy          :     Buy new product
+    Sell         :     Sell Product
+    Search       :     Search Products
+    Low stock    :     Low stock Products
+    Re-stock     :     Re-stock Products
+    Print        :     Print all products
+    Quit         :     Quit the program
+
+Please enter your choice > 
