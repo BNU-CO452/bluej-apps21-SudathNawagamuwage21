@@ -13,8 +13,24 @@ import java.util.Scanner;
 public class StockApp
 {
     private InputReader reader;
-
     private StockList stock;
+    public static final String ANSI_RESET  = "\u001B[0m";
+    public static final String ANSI_BLACK  = "\u001B[30m";
+    public static final String ANSI_RED    = "\u001B[31m";
+    public static final String ANSI_GREEN  = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE   = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN   = "\u001B[36m";
+    public static final String ANSI_WHITE  = "\u001B[37m";
+    public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
+    public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+    public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
+    public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
+    public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
+    public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
+    public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
+    public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
     //Scanner that values in putting.
     Scanner scan = new Scanner(System.in);
@@ -248,7 +264,7 @@ public class StockApp
     private void printMenuChoices()
     {
         System.out.println();
-        System.out.println("    Add          :     Add a new product");
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED +"    Add          :     Add a new product"+ANSI_RESET);
         System.out.println("    Remove       :     Remove an old product");
         System.out.println("    Buy          :     Buy new product");
         System.out.println("    Sell         :     Sell Product");
@@ -265,9 +281,9 @@ public class StockApp
      */
     private void printHeading()
     {
-        System.out.println("********************************");
-        System.out.println("  App21-04: Stock Application ");
-        System.out.println("      by Sudath Nawagamuwage");
-        System.out.println("********************************");
+        System.out.println( ANSI_GREEN_BACKGROUND +"********************************"+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED + "  App21-04: Stock Application   "+ ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED +"      by Sudath Nawagamuwage    "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND +"********************************"+ANSI_RESET);
     }
 }
