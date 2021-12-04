@@ -14,8 +14,6 @@ public class Main {
 
         app = new Game();
         app.play();
-
-
 	// write your code here
     }
 }
