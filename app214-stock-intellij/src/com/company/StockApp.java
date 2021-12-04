@@ -59,7 +59,7 @@ public class StockApp
             printHeading();
             printMenuChoices();
 
-            String choice = reader.getString("Please enter your choice > ");
+            String choice = reader.getString(ANSI_GREEN+"Please enter your choice > "+ANSI_RESET);
 
             finished = executeChoice(choice.toLowerCase());
         }
@@ -264,15 +264,15 @@ public class StockApp
     private void printMenuChoices()
     {
         System.out.println();
-        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED +"    Add          :     Add a new product"+ANSI_RESET);
-        System.out.println("    Remove       :     Remove an old product");
-        System.out.println("    Buy          :     Buy new product");
-        System.out.println("    Sell         :     Sell Product");
-        System.out.println("    Search       :     Search Products");
-        System.out.println("    Low stock    :     Low stock Products");
-        System.out.println("    Re-stock     :     Re-stock Products");
-        System.out.println("    Print        :     Print all products");
-        System.out.println("    Quit         :     Quit the program");
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Add          :     Add a new product    "+ANSI_RESET);
+        System.out.println(ANSI_CYAN_BACKGROUND  + ANSI_RED  +  "    Remove       :     Remove an old product"+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Buy          :     Buy new product      "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Sell         :     Sell Product         "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Search       :     Search Products      "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Low stock    :     Low stock Products   "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Re-stock     :     Re-stock Products    "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Print        :     Print all products   "+ANSI_RESET);
+        System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED  +  "    Quit         :     Quit the program     "+ANSI_RESET);
         System.out.println();
     }
 
